@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="style.css">
+  <title>Layout Desafio</title>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" alt="Icone padrão" srcset="">
+      <h1>Brayan Escouto</h1>
+      <p>Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+        Delectus possimus aspernatur 
+         perspiciatis! Nihil est labore dolorum, 
+        fugit corporis rem accusamus  
+        assumenda commodi facilis distinctio 
+        consectetur officiis nobis, eum velit quod?</p>
+      <ul>
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a href="#">Link4</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Lista de Tarefas</h1>
+      <div class="tasks-container">
+        <div class="task-list">
+          <h2>Dia</h2>
+          <div class="content-add-task">
+          <input type="text" class="new-task" placeholder="Digite sua tarefa">
+          <button onclick="newTask()" class="btn-new-task" title="clique aqui para adicionar uma nova tarefa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+            </svg>
+          </button>
+        </div>
+          <table class="todolist">
+            <tr>
+              <td>
+                <ol>
+                 
+                </ol>
+              </td>
+            </tr>
+          </table>
+         
+        </div>
+
+        <div class="task-list">
+          <h2>Noite</h2>
+          <div class="content-add-task">
+            <input type="text" class="new-task" placeholder="Digite sua tarefa">
+            <button onclick="newTask()" class="btn-new-task" title="clique aqui para adicionar uma nova tarefa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+            </button>
+          </div>
+          <table class="todolist">
+            <tr>
+              <td>
+                <ol>
+                  
+                  <!-- Adicione mais itens de lista conforme necessário -->
+                </ol>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

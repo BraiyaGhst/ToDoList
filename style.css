@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2c2c31;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9e9ea0;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #9e9ea0;
+}
+
+.menu h1 {
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.menu p,
+li {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #000;
+  list-style-type: none;
+}
+
+.menu a {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #752ed6;
+}
+
+.content {
+  padding: 20px;
+  background-color: #9e9ea0;
+  border: 1px solid;
+}
+
+.content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.task-list {
+  width: 300px;
+  height: 440px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.06);
+  overflow-y: auto;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  padding: 0px;
+}
+
+.content-add-task {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.new-task,
+.btn-new-task {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+
+.new-task {
+  width: 11rem;
+  height: 1.8rem;
+  border-radius: 2rem;
+  background-color: #d3d3d3;
+}
+
+.btn-new-task {
+  padding: 8px;
+  background: transparent;
+  width: 30px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-new-task:hover {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+}
+
+.todolist li {
+  gap: 10px;
+  list-style: none;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+.todolist li.completed {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.delete-button {
+  color: #000000d6;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  transform: scale(0.9);
+}
